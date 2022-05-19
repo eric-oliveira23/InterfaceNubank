@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNubank.View1"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="woman.png">
+
+      <StackLayout>
+        <StackLayout Padding="15">
+            <Frame HorizontalOptions="Start" Padding="0" Margin="0" CornerRadius="20">
+                <Image Source="logo.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="Start"/>
+            </Frame>
+        </StackLayout>
+
+        <Grid RowDefinitions="*,Auto,Auto" VerticalOptions="EndAndExpand" RowSpacing="25" Padding="25">
+            <Label Text="Um mundo financeiro sem complexidades."
+                   TextColor="White" x:Name="lblInicio" Font="nexaregular.otf#nexaregular" Grid.Row="0"/>
+            
+            <Button Text="Começar" Clicked="btnRegister" VerticalOptions="Center" TextColor="#820ad1" Font="nexaregular.otf#nexaregular"
+                                BackgroundColor="White" HeightRequest="50" Grid.Row="1"/>
+
+            <Button Text="Entrar em minha conta >" Clicked="btnLogin"  VerticalOptions="Center" Font="nexaregular.otf#nexaregular"
+                    HeightRequest="50" Grid.Row="2" BackgroundColor="#820ad1" />
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
